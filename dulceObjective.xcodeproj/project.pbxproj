@@ -13,6 +13,9 @@
 		E4982BFA1F7C1D9500C68A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4982BF91F7C1D9500C68A7F /* Assets.xcassets */; };
 		E4982BFD1F7C1D9500C68A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */; };
 		E4982C001F7C1D9500C68A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4982BFF1F7C1D9500C68A7F /* main.m */; };
+		F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F626A3D71F7D51BA00804ADD /* Cafe.m */; };
+		F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72E71F7D835600D0BC6E /* Capsula.m */; };
+		F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72EA1F7D896600D0BC6E /* CafeManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		E4982BFC1F7C1D9500C68A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4982BFE1F7C1D9500C68A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4982BFF1F7C1D9500C68A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F626A3D61F7D51BA00804ADD /* Cafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cafe.h; sourceTree = "<group>"; };
+		F626A3D71F7D51BA00804ADD /* Cafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cafe.m; sourceTree = "<group>"; };
+		F65F72E61F7D835600D0BC6E /* Capsula.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Capsula.h; sourceTree = "<group>"; };
+		F65F72E71F7D835600D0BC6E /* Capsula.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capsula.m; sourceTree = "<group>"; };
+		F65F72E91F7D896600D0BC6E /* CafeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CafeManager.h; sourceTree = "<group>"; };
+		F65F72EA1F7D896600D0BC6E /* CafeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +76,12 @@
 				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
 				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
 				E4982BFF1F7C1D9500C68A7F /* main.m */,
+				F626A3D61F7D51BA00804ADD /* Cafe.h */,
+				F626A3D71F7D51BA00804ADD /* Cafe.m */,
+				F65F72E61F7D835600D0BC6E /* Capsula.h */,
+				F65F72E71F7D835600D0BC6E /* Capsula.m */,
+				F65F72E91F7D896600D0BC6E /* CafeManager.h */,
+				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
 			);
 			path = dulceObjective;
 			sourceTree = "<group>";
@@ -142,6 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */,
+				F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */,
+				F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */,
 				E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */,
 				E4982C001F7C1D9500C68A7F /* main.m in Sources */,
 				E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */,
