@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E418E0131F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E418E0121F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.m */; };
 		E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4982BF11F7C1D9500C68A7F /* AppDelegate.m */; };
 		E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4982BF41F7C1D9500C68A7F /* ViewController.m */; };
 		E4982BF81F7C1D9500C68A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4982BF61F7C1D9500C68A7F /* Main.storyboard */; };
@@ -16,9 +17,14 @@
 		F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F626A3D71F7D51BA00804ADD /* Cafe.m */; };
 		F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72E71F7D835600D0BC6E /* Capsula.m */; };
 		F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72EA1F7D896600D0BC6E /* CafeManager.m */; };
+		F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */; };
+		F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */; };
+		F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E418E0111F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdicionarTipoDeCafeViewController.h; sourceTree = "<group>"; };
+		E418E0121F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdicionarTipoDeCafeViewController.m; sourceTree = "<group>"; };
 		E4982BED1F7C1D9500C68A7F /* dulceObjective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dulceObjective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4982BF01F7C1D9500C68A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4982BF11F7C1D9500C68A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +41,12 @@
 		F65F72E71F7D835600D0BC6E /* Capsula.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capsula.m; sourceTree = "<group>"; };
 		F65F72E91F7D896600D0BC6E /* CafeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CafeManager.h; sourceTree = "<group>"; };
 		F65F72EA1F7D896600D0BC6E /* CafeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeManager.m; sourceTree = "<group>"; };
+		F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiposDeCafeTableViewController.h; sourceTree = "<group>"; };
+		F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiposDeCafeTableViewController.m; sourceTree = "<group>"; };
+		F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItensDoTipoDeterminadoViewController.h; sourceTree = "<group>"; };
+		F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItensDoTipoDeterminadoViewController.m; sourceTree = "<group>"; };
+		F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CelulaTableViewCell.h; sourceTree = "<group>"; };
+		F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelulaTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +79,17 @@
 		E4982BEF1F7C1D9500C68A7F /* dulceObjective */ = {
 			isa = PBXGroup;
 			children = (
+				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
+				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
 				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
 				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
 				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
 				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
 				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
+				F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */,
+				F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */,
+				E418E0111F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.h */,
+				E418E0121F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.m */,
 				E4982BF91F7C1D9500C68A7F /* Assets.xcassets */,
 				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
 				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
@@ -82,6 +100,8 @@
 				F65F72E71F7D835600D0BC6E /* Capsula.m */,
 				F65F72E91F7D896600D0BC6E /* CafeManager.h */,
 				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
+				F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */,
+				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
 			);
 			path = dulceObjective;
 			sourceTree = "<group>";
@@ -158,10 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */,
+				E418E0131F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.m in Sources */,
 				F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */,
 				F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */,
 				E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */,
 				E4982C001F7C1D9500C68A7F /* main.m in Sources */,
+				F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */,
+				F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */,
+				F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */,
 				E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LLY7HD6QBD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = dulceObjective/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gustavobraghim.dulceObjective;
@@ -311,7 +335,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LLY7HD6QBD;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = dulceObjective/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gustavobraghim.dulceObjective;

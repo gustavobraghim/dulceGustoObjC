@@ -9,4 +9,11 @@
 #import "Capsula.h"
 
 @implementation Capsula
+- (void)initWithName:(NSString *)name Descricao:(NSString *)des Imagem:(UIImage *)image Tracos:(int)tracos{
+    self.name = name;
+    self.des = des;
+    self.image = image;
+    self.tracos = tracos;
+}
 @end
+

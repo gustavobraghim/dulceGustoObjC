@@ -13,7 +13,7 @@
         <!--Adicionar Tipo de Café-->
         <scene sceneID="QQM-w3-xeT">
             <objects>
-                <viewController id="47k-1c-V3A" sceneMemberID="viewController">
+                <viewController id="47k-1c-V3A" customClass="AdicionarTipoDeCafeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i5M-od-EI7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +36,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addTipoCafeButton:" destination="47k-1c-V3A" eventType="touchUpInside" id="F6V-Vl-oIF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,15 +56,19 @@
                         <viewLayoutGuide key="safeArea" id="7c1-ap-GjL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Adicionar Tipo de Café" id="p6i-Ss-sSn"/>
+                    <connections>
+                        <outlet property="inserirTipoCafeTxt" destination="Qsb-Tc-wa8" id="o8g-oz-BYN"/>
+                        <outlet property="tipoDeCafe" destination="Qsb-Tc-wa8" id="D8w-c7-3xq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwi-ID-rhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1487.2" y="516.79160419790105"/>
         </scene>
-        <!--View Controller-->
+        <!--Tipos De Cafe Table View Controller-->
         <scene sceneID="mzG-Mh-3rr">
             <objects>
-                <viewController id="YgC-FI-7fT" sceneMemberID="viewController">
+                <viewController id="YgC-FI-7fT" customClass="TiposDeCafeTableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uxe-bD-mnl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,11 +83,11 @@
                                 <rect key="frame" x="0.0" y="103" width="320" height="328"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="l4a-mQ-pZA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CafeCell" id="l4a-mQ-pZA" customClass="CelulaTableViewCell">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l4a-mQ-pZA" id="1Rj-ck-Qwd">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeN-M8-kDf">
@@ -97,7 +104,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ETB-h6-6BO" kind="show" id="NjS-GJ-1g1"/>
+                                            <outlet property="titleLabel" destination="AeN-M8-kDf" id="qw1-ng-43Z"/>
+                                            <segue destination="ETB-h6-6BO" kind="show" id="Fvv-og-hYa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -120,15 +128,18 @@
                         <viewLayoutGuide key="safeArea" id="2gd-HP-Z6F"/>
                     </view>
                     <navigationItem key="navigationItem" id="Vqh-Fb-E3u"/>
+                    <connections>
+                        <outlet property="tableView" destination="49E-Bx-844" id="Auc-mv-zCD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWc-jV-tXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2520" y="218.66197183098592"/>
         </scene>
-        <!--View Controller-->
+        <!--Itens Do Tipo Determinado View Controller-->
         <scene sceneID="ZzV-ny-KJt">
             <objects>
-                <viewController id="ETB-h6-6BO" sceneMemberID="viewController">
+                <viewController id="ETB-h6-6BO" customClass="ItensDoTipoDeterminadoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GZO-I8-xBx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,7 +157,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4oY-M6-m32">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="capsulaCell" id="4oY-M6-m32">
                                         <rect key="frame" x="42" y="0.0" width="236" height="123"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -213,15 +224,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gsa-KE-bnl"/>
                     </view>
+                    <connections>
+                        <outlet property="cafeLabel" destination="EUb-tB-O1b" id="opI-25-rkI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbX-Ar-WEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3346.875" y="-130.98591549295776"/>
         </scene>
-        <!--View Controller-->
+        <!--Adicionar Capsula View Controller-->
         <scene sceneID="mQh-on-PWE">
             <objects>
-                <viewController id="7zi-gt-Prx" sceneMemberID="viewController">
+                <viewController id="7zi-gt-Prx" customClass="AdicionarCapsulaViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5i-BA-OIn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,8 +252,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagem da Capsula" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAQ-ck-Wnx">
-                                <rect key="frame" x="0.0" y="152" width="320" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Imagem da Capsula" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAQ-ck-Wnx">
+                                <rect key="frame" x="1" y="132" width="320" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="MZ7-46-OyB"/>
                                     <constraint firstAttribute="height" constant="21" id="xgf-b0-EgI"/>
@@ -248,21 +262,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWS-v6-YGC">
-                                <rect key="frame" x="73" y="181" width="175" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWS-v6-YGC">
+                                <rect key="frame" x="74" y="161" width="175" height="30"/>
                                 <state key="normal" title="Upload de foto"/>
+                                <connections>
+                                    <action selector="uploadImageButton:" destination="7zi-gt-Prx" eventType="touchUpInside" id="OA1-N9-Fvx"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wCu-7O-vz0">
-                                <rect key="frame" x="73" y="219" width="175" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wCu-7O-vz0">
+                                <rect key="frame" x="74" y="199" width="175" height="80"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NQe-Wj-U7P">
-                                <rect key="frame" x="8" y="376" width="304" height="49"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NQe-Wj-U7P">
+                                <rect key="frame" x="9" y="343" width="304" height="49"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traços:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-un-PDZ">
-                                <rect key="frame" x="73" y="307" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Traços:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-un-PDZ">
+                                <rect key="frame" x="74" y="287" width="57" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="57" id="HvO-fH-aKx"/>
                                     <constraint firstAttribute="height" constant="21" id="QYK-8u-ebT"/>
@@ -271,14 +288,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-5y-5CQ">
-                                <rect key="frame" x="73" y="345" width="175" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Descrição" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfv-5y-5CQ">
+                                <rect key="frame" x="74" y="325" width="175" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira os traços" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-mc-K6u">
-                                <rect key="frame" x="138" y="307" width="120" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira os traços" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-mc-K6u">
+                                <rect key="frame" x="139" y="287" width="120" height="30"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="121" id="G8I-zQ-bWC"/>
@@ -288,6 +305,18 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira o nome da capsula" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K8B-ck-3yE">
+                                <rect key="frame" x="33" y="100" width="256" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWH-gl-beK">
+                                <rect key="frame" x="137" y="400" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -368,6 +397,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OGO-oD-h6G"/>
                     </view>
+                    <connections>
+                        <outlet property="descricaoDaCapsula" destination="NQe-Wj-U7P" id="0fV-ah-kmH"/>
+                        <outlet property="imagemDaCapsula" destination="wCu-7O-vz0" id="XYg-EO-aHO"/>
+                        <outlet property="nomeDaCapsulaText" destination="K8B-ck-3yE" id="NP5-Tb-0nt"/>
+                        <outlet property="tracosDaCapsula" destination="dZa-mc-K6u" id="XXQ-fb-iGo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRc-hi-HSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

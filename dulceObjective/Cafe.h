@@ -11,11 +11,11 @@
 
 @interface Cafe : NSObject
 
-@property NSString* name;
-@property NSString* des;
-@property UIImage* image;
-@property int tracos;
+@property(nonatomic, strong) NSMutableArray* capsulaArray;
 
-- (void)initWithName:(NSString *)name Descricao:(NSString *)des Imagem:(UIImage *)image Tracos:(int)tracos;
+
+//@property(nonatomic, strong) Capsula* capsulaArray;
+
+
 
 @end

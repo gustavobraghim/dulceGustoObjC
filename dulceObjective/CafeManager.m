@@ -12,12 +12,29 @@
 
 
 @implementation CafeManager
-Cafe *sharedInstance = CafeManager;
 
-//private cafes = [String:Cafe]()
--(void) insertCafe: (NSString *) cafeName{
-    dict[cafeName] = Cafe();
-    
+- (void)insertCafe:(NSString *)cafeName {
+    [self.cafes addObject: cafeName];
 }
 
+- (void)removeCafe:(NSString *)cafeName {
+    [self.cafes removeObject:cafeName];
+}
+
+//-(NSMutableDictionary *)getCafes: (NSMutableDictionary *) dict{
+//
+//}
+
+- (void)insertCapsula:(NSString *)tipoDeCafe capsula:(NSMutableArray *)capsula {
+    //self.dict[tipoDeCafe] = capsula;
+    [self.capsulaArray addObject:capsula];
+}
+
+- (void)removeCapsula:(NSString *)tipoDeCafe capsula:(Capsula *)capsula {
+    [self.capsulaArray removeObject:capsula];
+}
+
+//-(Capsula *) getCapsula: (NSString *) tipoDeCafe{
+//    
+//}
 @end

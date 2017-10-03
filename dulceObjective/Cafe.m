@@ -10,11 +10,11 @@
 #import <UIKit/UIKit.h>
 
 @implementation Cafe
-- (void)initWithName:(NSString *)name Descricao:(NSString *)des Imagem:(UIImage *)image Tracos:(int)tracos{
-    self.name = name;
-    self.des = des;
-    self.image = image;
-    self.tracos = tracos;
-}
+
+//@property(nonatomic, strong) Capsula* capsulaArray;
+
+
+
+
 @end
 

@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Cafe.h"
+#import "Capsula.h"
+#import "CafeManager.h"
 
 @interface ViewController : UIViewController
 
