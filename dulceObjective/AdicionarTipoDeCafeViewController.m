@@ -7,24 +7,18 @@
 //
 
 #import "AdicionarTipoDeCafeViewController.h"
-#import "CafeManager.h"
+#import "TiposDeCafeTableViewController.h"
+
 @interface AdicionarTipoDeCafeViewController ()
-- (IBAction)addTipoCafeButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UITextField *inserirTipoCafeTxt;
-@property(nonatomic, strong) NSMutableArray *cafes;
+@property (nonatomic, weak) TiposDeCafeTableViewController *ligacao;
 @end
 
 @implementation AdicionarTipoDeCafeViewController
+- (IBAction)addTipoCafeButton:(id)sender {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-
-
-- (IBAction)addTipoCafeButton:(id)sender {
-    if (self.inserirTipoCafeTxt.text == @"") {
-    }
-    
-    [self.cafes addObject:self.inserirTipoCafeTxt.text];
-    _inserirTipoCafeTxt.text =@"";
-    }
 @end

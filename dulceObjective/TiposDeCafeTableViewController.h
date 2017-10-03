@@ -13,4 +13,5 @@
 @property(strong, nonatomic) IBOutlet UITableView *tableView;
 @property(strong, nonatomic) NSArray *cafes;
 
+
 @end

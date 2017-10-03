@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,52 +19,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="754" text="Adicionar tipo de café" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZGl-13-IKG">
-                                <rect key="frame" x="71" y="35.5" width="177" height="26.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" verticalCompressionResistancePriority="753" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira o tipo de café" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qsb-Tc-wa8">
-                                <rect key="frame" x="16" y="223" width="288" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira o tipo de café" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zNU-hH-SLy">
+                                <rect key="frame" x="83" y="98" width="148" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ra1-2a-Ij7">
-                                <rect key="frame" x="133" y="342" width="53" height="30"/>
-                                <color key="backgroundColor" red="0.73100195899999998" green="0.83608444969999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQt-QV-BKi">
+                                <rect key="frame" x="110" y="368" width="95" height="30"/>
+                                <color key="backgroundColor" red="0.15420539280000001" green="0.52116261740000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lQt-QV-BKi" secondAttribute="height" multiplier="19:6" id="PQ5-LA-Kzy"/>
+                                </constraints>
+                                <state key="normal" title="ADICIONAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="addTipoCafeButton:" destination="47k-1c-V3A" eventType="touchUpInside" id="F6V-Vl-oIF"/>
+                                    <action selector="addTipoCafeButton:" destination="47k-1c-V3A" eventType="touchUpInside" id="RYT-oD-RGl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZGl-13-IKG" firstAttribute="top" secondItem="7c1-ap-GjL" secondAttribute="top" constant="15.5" id="BX2-h7-nMF"/>
-                            <constraint firstItem="7c1-ap-GjL" firstAttribute="trailing" secondItem="ZGl-13-IKG" secondAttribute="trailing" constant="72" id="FMm-qt-Vvz"/>
-                            <constraint firstItem="Ra1-2a-Ij7" firstAttribute="leading" secondItem="7c1-ap-GjL" secondAttribute="leading" constant="133" id="MY0-bn-huv"/>
-                            <constraint firstItem="7c1-ap-GjL" firstAttribute="trailing" secondItem="Qsb-Tc-wa8" secondAttribute="trailing" constant="16" id="Sat-DC-Gpt"/>
-                            <constraint firstItem="7c1-ap-GjL" firstAttribute="trailing" secondItem="Ra1-2a-Ij7" secondAttribute="trailing" constant="134" id="aAX-FK-Qzk"/>
-                            <constraint firstItem="7c1-ap-GjL" firstAttribute="bottom" secondItem="Ra1-2a-Ij7" secondAttribute="bottom" constant="59" id="fje-cN-ZcI"/>
-                            <constraint firstItem="ZGl-13-IKG" firstAttribute="leading" secondItem="7c1-ap-GjL" secondAttribute="leading" constant="71" id="k58-xG-yzI"/>
-                            <constraint firstItem="Qsb-Tc-wa8" firstAttribute="leading" secondItem="7c1-ap-GjL" secondAttribute="leading" constant="16" id="pkC-DI-rlJ"/>
-                            <constraint firstItem="Qsb-Tc-wa8" firstAttribute="top" secondItem="ZGl-13-IKG" secondAttribute="bottom" constant="161" id="qPI-Xx-h6x"/>
+                            <constraint firstItem="7c1-ap-GjL" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lQt-QV-BKi" secondAttribute="trailing" id="1N0-vk-gxC"/>
+                            <constraint firstItem="7c1-ap-GjL" firstAttribute="trailing" secondItem="zNU-hH-SLy" secondAttribute="trailing" constant="89" id="BBv-pn-QGv"/>
+                            <constraint firstItem="zNU-hH-SLy" firstAttribute="top" secondItem="7c1-ap-GjL" secondAttribute="top" constant="78" id="Dcy-kG-REd"/>
+                            <constraint firstItem="zNU-hH-SLy" firstAttribute="centerX" secondItem="lQt-QV-BKi" secondAttribute="centerX" id="JuT-8F-7RV"/>
+                            <constraint firstItem="lQt-QV-BKi" firstAttribute="leading" secondItem="7c1-ap-GjL" secondAttribute="leading" constant="110" id="Qum-jY-Opz"/>
+                            <constraint firstItem="lQt-QV-BKi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7c1-ap-GjL" secondAttribute="leading" id="XVk-OA-xBe"/>
+                            <constraint firstItem="zNU-hH-SLy" firstAttribute="leading" secondItem="7c1-ap-GjL" secondAttribute="leading" constant="83" id="hGh-N3-2s5"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="lQt-QV-BKi" secondAttribute="bottom" constant="33" id="r7q-tI-4Wr"/>
+                            <constraint firstItem="zNU-hH-SLy" firstAttribute="leading" secondItem="7c1-ap-GjL" secondAttribute="leading" constant="83" id="sh7-3q-4SH"/>
+                            <constraint firstItem="7c1-ap-GjL" firstAttribute="trailing" secondItem="lQt-QV-BKi" secondAttribute="trailing" constant="115" id="yYI-tw-WWD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7c1-ap-GjL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Adicionar Tipo de Café" id="p6i-Ss-sSn"/>
                     <connections>
-                        <outlet property="inserirTipoCafeTxt" destination="Qsb-Tc-wa8" id="o8g-oz-BYN"/>
-                        <outlet property="tipoDeCafe" destination="Qsb-Tc-wa8" id="D8w-c7-3xq"/>
+                        <outlet property="nomeTipoCafeTxt" destination="zNU-hH-SLy" id="2Xi-lz-hpz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vwi-ID-rhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487.2" y="516.79160419790105"/>
+            <point key="canvasLocation" x="1563.75" y="590"/>
         </scene>
         <!--Tipos De Cafe Table View Controller-->
         <scene sceneID="mzG-Mh-3rr">
@@ -105,7 +103,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="titleLabel" destination="AeN-M8-kDf" id="qw1-ng-43Z"/>
-                                            <segue destination="ETB-h6-6BO" kind="show" id="Fvv-og-hYa"/>
+                                            <segue destination="ETB-h6-6BO" kind="show" identifier="showTipoDetalhe" id="Fvv-og-hYa"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

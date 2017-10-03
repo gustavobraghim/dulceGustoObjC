@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _cafeLabel.text = _cafeName;
 }
 
 

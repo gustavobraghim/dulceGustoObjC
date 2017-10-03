@@ -8,6 +8,7 @@
 
 #import "TiposDeCafeTableViewController.h"
 #import "CelulaTableViewCell.h"
+#import "ItensDoTipoDeterminadoViewController.h"
 
 @interface TiposDeCafeTableViewController ()
 
@@ -19,8 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.cafes = [@[@"Expresso", @"Especial"] mutableCopy];
-    //cafes = [NSArray arrayWithObjects:@"Expresso",@"Especial", nil];
+    //self.cafes = [@[@"Expresso", @"Especial"] mutableCopy];
+    _cafes = [NSMutableArray arrayWithObjects:@"Expresso",@"Especial", nil];
 
 }
 
@@ -41,5 +42,13 @@
     CelulaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     cell.titleLabel.text = [self.cafes objectAtIndex:indexPath.row];
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showTipoDetalhe"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        ItensDoTipoDeterminadoViewController *destViewController = segue.destinationViewController;
+        destViewController.cafeName = [_cafes objectAtIndex:indexPath.row];
+    }
 }
 @end

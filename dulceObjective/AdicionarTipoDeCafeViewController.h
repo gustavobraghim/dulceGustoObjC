@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TiposDeCafeTableViewController.h"
+@class TiposDeCafeTableViewController;
 @interface AdicionarTipoDeCafeViewController : UIViewController{
 
+
+    IBOutlet UITextField *nomeTipoCafeTxt;
 }
 
 @end

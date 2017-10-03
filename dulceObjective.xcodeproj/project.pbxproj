@@ -85,13 +85,11 @@
 				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
 				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
 				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
-				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
 				F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */,
 				F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */,
 				E418E0111F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.h */,
 				E418E0121F82EB980097ADD5 /* AdicionarTipoDeCafeViewController.m */,
 				E4982BF91F7C1D9500C68A7F /* Assets.xcassets */,
-				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
 				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
 				E4982BFF1F7C1D9500C68A7F /* main.m */,
 				F626A3D61F7D51BA00804ADD /* Cafe.h */,
@@ -102,6 +100,8 @@
 				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
 				F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */,
 				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
+				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
+				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
 			);
 			path = dulceObjective;
 			sourceTree = "<group>";
