@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddTipoDeCafeViewController.h"
 
-@interface TiposDeCafeTableViewController : UIViewController <UITableViewDataSource, UITableViewDataSource>
+@interface TiposDeCafeTableViewController : UIViewController <UITableViewDataSource, UITableViewDataSource, CafeDelegate>
 
+@property (strong, nonatomic) IBOutlet UILabel *labelOutput;
 @property(strong, nonatomic) IBOutlet UITableView *tableView;
-@property(strong, nonatomic) NSArray *cafes;
+@property(strong, nonatomic) NSMutableArray *cafes;
+
 
 
 @end

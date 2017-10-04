@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Capsula.h"
 
-@interface ItensDoTipoDeterminadoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ItensDoTipoDeterminadoViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CapsulaDelegate>
 @property (nonatomic, strong) IBOutlet UILabel *cafeLabel;
 @property (nonatomic, strong) NSString *cafeName;
+@property(strong, nonatomic) Capsula *capsula;
 @end

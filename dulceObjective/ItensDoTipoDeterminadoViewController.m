@@ -9,17 +9,16 @@
 #import "ItensDoTipoDeterminadoViewController.h"
 
 @interface ItensDoTipoDeterminadoViewController ()
-
 @end
 
 @implementation ItensDoTipoDeterminadoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _cafeLabel.text = _cafeName;
+   _cafeLabel.text = _cafeName;
+//   _capsula = [Capsula];
+    
+    //como exibir na view collection???
 }
-
-
-
 
 @end
