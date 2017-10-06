@@ -24,9 +24,6 @@
     [super didReceiveMemoryWarning];
 }
 
-//-(void) saveText{
-//    [self.delegate sendTextToViewController:self.inputTextField.text];
-//}
 - (IBAction)addCafe:(id)sender {
     [self.delegate sendTextToViewController:self.inputTextField.text];
     self.inputTextField.text = @"";

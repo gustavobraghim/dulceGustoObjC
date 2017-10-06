@@ -10,11 +10,5 @@
 #import <UIKit/UIKit.h>
 
 @implementation Cafe
-
-//@property(nonatomic, strong) Capsula* capsulaArray;
-
-
-
-
 @end
 

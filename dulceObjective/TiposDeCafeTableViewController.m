@@ -18,7 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _cafes = [NSMutableArray arrayWithObjects:@"Expresso",@"Especial", nil];
+    Cafe *expresso = [[Cafe alloc] init];
+    [expresso setName:@"Expresso"];
+    [expresso setTracos:3];
+    
+    Cafe *especial = [[Cafe alloc] init];
+    [especial setName:@"Especial"];
+    [especial setTracos:2];
+    
+    self.cafes = [NSMutableArray arrayWithObjects:especial,expresso, nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -34,7 +42,7 @@
 {
     static NSString *simpleTableIdentifier = @"CafeCell";
     CelulaTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    cell.titleLabel.text = [self.cafes objectAtIndex:indexPath.row];
+    cell.titleLabel.text = [self.cafes objectAtIndex:indexPath.row].name;
     return cell;
 }
 
@@ -42,7 +50,7 @@
     if ([segue.identifier isEqualToString:@"showTipoDetalhe"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         ItensDoTipoDeterminadoViewController *destViewController = segue.destinationViewController;
-        destViewController.cafeName = [_cafes objectAtIndex:indexPath.row];
+        destViewController.cafe = [self.cafes objectAtIndex:indexPath.row];
     }
     else if ([segue.identifier isEqualToString:@"addCoffeSegue"]){
         AddTipoDeCafeViewController *tipoDeCafe = segue.destinationViewController;
@@ -56,10 +64,8 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        //remove the deleted object from your data source.
-        //If your data source is an NSMutableArray, do this
         [self.cafes removeObjectAtIndex:indexPath.row];
-        [tableView reloadData]; // tell table to refresh now
+        [tableView reloadData];
     }
 }
 
@@ -68,3 +74,4 @@
     [self.tableView reloadData];
 }
 @end
+

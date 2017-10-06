@@ -15,10 +15,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   _cafeLabel.text = _cafeName;
-//   _capsula = [Capsula];
+    self.cafeQuantidade = [NSString stringWithFormat:@"%ld",self.cafe.numberCapsulas];
+    self.cafeLabel.text = self.cafeName;
+    self.labelExibeQuantidade.text = self.cafeQuantidade;
+}
+
+- (IBAction)addCapsula:(id)sender {
+    self.cafe.numberCapsulas = self.cafe.numberCapsulas+1;
     
-    //como exibir na view collection???
+    self.cafeQuantidade = [NSString stringWithFormat:@"%ld",self.cafe.numberCapsulas];
+    self.labelExibeQuantidade.text = self.cafeQuantidade;
+}
+
+- (IBAction)removeCapsula:(id)sender {
+    if (self.cafe.numberCapsulas != 0){
+        self.cafe.numberCapsulas = self.cafe.numberCapsulas-1;
+        
+        self.cafeQuantidade = [NSString stringWithFormat:@"%ld",self.cafe.numberCapsulas];
+        self.labelExibeQuantidade.text = self.cafeQuantidade;
+    }
 }
 
 @end
+

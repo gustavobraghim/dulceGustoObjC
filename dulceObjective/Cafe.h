@@ -10,12 +10,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Cafe : NSObject
-
-@property(nonatomic, strong) NSMutableArray* capsulaArray;
-
-
-//@property(nonatomic, strong) Capsula* capsulaArray;
-
-
+@property(nonatomic, strong) NSString* name;
+@property NSInteger tracos;
+@property NSInteger numberCapsulas;
 
 @end

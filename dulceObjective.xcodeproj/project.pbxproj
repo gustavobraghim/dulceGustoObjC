@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C30D8D51F7869C54F16E4D5 /* libPods-dulceObjective.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D920271483BB4B0AFC0E3E /* libPods-dulceObjective.a */; };
 		E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4982BF11F7C1D9500C68A7F /* AppDelegate.m */; };
 		E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4982BF41F7C1D9500C68A7F /* ViewController.m */; };
 		E4982BF81F7C1D9500C68A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4982BF61F7C1D9500C68A7F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F626A3D71F7D51BA00804ADD /* Cafe.m */; };
 		F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72E71F7D835600D0BC6E /* Capsula.m */; };
 		F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72EA1F7D896600D0BC6E /* CafeManager.m */; };
+		F6604B391F881E9400353A0A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F6604B381F881E9400353A0A /* libsqlite3.0.tbd */; };
 		F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */; };
 		F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */; };
 		F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */; };
@@ -24,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47D920271483BB4B0AFC0E3E /* libPods-dulceObjective.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dulceObjective.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61933BF7862FEABE71E227CA /* Pods-dulceObjective.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dulceObjective.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dulceObjective/Pods-dulceObjective.debug.xcconfig"; sourceTree = "<group>"; };
+		6433FE4C8ED72A31BD1D3787 /* Pods-dulceObjective.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dulceObjective.release.xcconfig"; path = "Pods/Target Support Files/Pods-dulceObjective/Pods-dulceObjective.release.xcconfig"; sourceTree = "<group>"; };
 		E4982BED1F7C1D9500C68A7F /* dulceObjective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dulceObjective.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4982BF01F7C1D9500C68A7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E4982BF11F7C1D9500C68A7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +47,12 @@
 		F65F72E71F7D835600D0BC6E /* Capsula.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capsula.m; sourceTree = "<group>"; };
 		F65F72E91F7D896600D0BC6E /* CafeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CafeManager.h; sourceTree = "<group>"; };
 		F65F72EA1F7D896600D0BC6E /* CafeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeManager.m; sourceTree = "<group>"; };
+		F6604B381F881E9400353A0A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F6604B451F88233700353A0A /* Cafes.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cafes.db; path = dulceObjective/Cafes.db; sourceTree = SOURCE_ROOT; };
+		F6604B461F8823A900353A0A /* FMResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		F6604B471F8823A900353A0A /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		F6604B481F8823A900353A0A /* FMDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		F6604B491F8823A900353A0A /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiposDeCafeTableViewController.h; sourceTree = "<group>"; };
 		F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiposDeCafeTableViewController.m; sourceTree = "<group>"; };
 		F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItensDoTipoDeterminadoViewController.h; sourceTree = "<group>"; };
@@ -57,17 +68,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6604B391F881E9400353A0A /* libsqlite3.0.tbd in Frameworks */,
+				3C30D8D51F7869C54F16E4D5 /* libPods-dulceObjective.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33C9ABEA56D5024140619EBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6604B381F881E9400353A0A /* libsqlite3.0.tbd */,
+				47D920271483BB4B0AFC0E3E /* libPods-dulceObjective.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C204F1E419F732A813F734D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61933BF7862FEABE71E227CA /* Pods-dulceObjective.debug.xcconfig */,
+				6433FE4C8ED72A31BD1D3787 /* Pods-dulceObjective.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E4982BE41F7C1D9500C68A7F = {
 			isa = PBXGroup;
 			children = (
 				E4982BEF1F7C1D9500C68A7F /* dulceObjective */,
 				E4982BEE1F7C1D9500C68A7F /* Products */,
+				4C204F1E419F732A813F734D /* Pods */,
+				33C9ABEA56D5024140619EBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,33 +115,46 @@
 		E4982BEF1F7C1D9500C68A7F /* dulceObjective */ = {
 			isa = PBXGroup;
 			children = (
+				F6604B3A1F88215B00353A0A /* FMDB */,
+				F626A3D61F7D51BA00804ADD /* Cafe.h */,
+				F626A3D71F7D51BA00804ADD /* Cafe.m */,
 				F62056121F85120E00630800 /* AddTipoDeCafeViewController.h */,
 				F62056131F85120E00630800 /* AddTipoDeCafeViewController.m */,
-				F6ECA15D1F8550E90008F7A8 /* AddNewCapsulaViewController.h */,
-				F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */,
-				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
-				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
-				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
-				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
-				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
-				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
 				F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */,
 				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
 				F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */,
 				F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */,
+				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
+				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
+				F6604B451F88233700353A0A /* Cafes.db */,
 				E4982BF91F7C1D9500C68A7F /* Assets.xcassets */,
 				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
 				E4982BFF1F7C1D9500C68A7F /* main.m */,
-				F626A3D61F7D51BA00804ADD /* Cafe.h */,
-				F626A3D71F7D51BA00804ADD /* Cafe.m */,
-				F65F72E61F7D835600D0BC6E /* Capsula.h */,
-				F65F72E71F7D835600D0BC6E /* Capsula.m */,
-				F65F72E91F7D896600D0BC6E /* CafeManager.h */,
-				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
+				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
+				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
+				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
+				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
 				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
 				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
+				F65F72E61F7D835600D0BC6E /* Capsula.h */,
+				F65F72E71F7D835600D0BC6E /* Capsula.m */,
+				F6ECA15D1F8550E90008F7A8 /* AddNewCapsulaViewController.h */,
+				F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */,
+				F65F72E91F7D896600D0BC6E /* CafeManager.h */,
+				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
 			);
 			path = dulceObjective;
+			sourceTree = "<group>";
+		};
+		F6604B3A1F88215B00353A0A /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				F6604B471F8823A900353A0A /* FMDatabase.h */,
+				F6604B481F8823A900353A0A /* FMDatabase.m */,
+				F6604B491F8823A900353A0A /* FMResultSet.h */,
+				F6604B461F8823A900353A0A /* FMResultSet.m */,
+			);
+			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4982C031F7C1D9500C68A7F /* Build configuration list for PBXNativeTarget "dulceObjective" */;
 			buildPhases = (
+				3853E98D8AFDA936794DF1C0 /* [CP] Check Pods Manifest.lock */,
 				E4982BE91F7C1D9500C68A7F /* Sources */,
 				E4982BEA1F7C1D9500C68A7F /* Frameworks */,
 				E4982BEB1F7C1D9500C68A7F /* Resources */,
+				C72859C9E5FE83CEB754E440 /* [CP] Embed Pods Frameworks */,
+				458387093260DE975AA9560B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,6 +225,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3853E98D8AFDA936794DF1C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dulceObjective-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		458387093260DE975AA9560B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dulceObjective/Pods-dulceObjective-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72859C9E5FE83CEB754E440 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-dulceObjective/Pods-dulceObjective-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E4982BE91F7C1D9500C68A7F /* Sources */ = {
@@ -324,6 +424,7 @@
 		};
 		E4982C041F7C1D9500C68A7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61933BF7862FEABE71E227CA /* Pods-dulceObjective.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +439,7 @@
 		};
 		E4982C051F7C1D9500C68A7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6433FE4C8ED72A31BD1D3787 /* Pods-dulceObjective.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
