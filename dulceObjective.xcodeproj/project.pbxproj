@@ -18,10 +18,13 @@
 		F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F626A3D71F7D51BA00804ADD /* Cafe.m */; };
 		F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72E71F7D835600D0BC6E /* Capsula.m */; };
 		F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72EA1F7D896600D0BC6E /* CafeManager.m */; };
-		F6604B391F881E9400353A0A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F6604B381F881E9400353A0A /* libsqlite3.0.tbd */; };
 		F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */; };
 		F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */; };
 		F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */; };
+		F6C695521F8D0C6900463E48 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C695511F8D0C6900463E48 /* DBManager.m */; };
+		F6D5B4981F8EA00B00011296 /* AddPostsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B4971F8EA00B00011296 /* AddPostsVC.m */; };
+		F6D5B49B1F8EA2D100011296 /* PostsExistentesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B49A1F8EA2D100011296 /* PostsExistentesVC.m */; };
+		F6D5B49E1F8EA33B00011296 /* PostsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B49D1F8EA33B00011296 /* PostsTableViewCell.m */; };
 		F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -47,18 +50,21 @@
 		F65F72E71F7D835600D0BC6E /* Capsula.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capsula.m; sourceTree = "<group>"; };
 		F65F72E91F7D896600D0BC6E /* CafeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CafeManager.h; sourceTree = "<group>"; };
 		F65F72EA1F7D896600D0BC6E /* CafeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeManager.m; sourceTree = "<group>"; };
-		F6604B381F881E9400353A0A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		F6604B451F88233700353A0A /* Cafes.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cafes.db; path = dulceObjective/Cafes.db; sourceTree = SOURCE_ROOT; };
-		F6604B461F8823A900353A0A /* FMResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		F6604B471F8823A900353A0A /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		F6604B481F8823A900353A0A /* FMDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		F6604B491F8823A900353A0A /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiposDeCafeTableViewController.h; sourceTree = "<group>"; };
 		F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiposDeCafeTableViewController.m; sourceTree = "<group>"; };
 		F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItensDoTipoDeterminadoViewController.h; sourceTree = "<group>"; };
 		F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItensDoTipoDeterminadoViewController.m; sourceTree = "<group>"; };
 		F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CelulaTableViewCell.h; sourceTree = "<group>"; };
 		F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelulaTableViewCell.m; sourceTree = "<group>"; };
+		F6C6954F1F8D014300463E48 /* Cafes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafes.db; sourceTree = SOURCE_ROOT; };
+		F6C695501F8D0C6900463E48 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		F6C695511F8D0C6900463E48 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		F6D5B4961F8EA00B00011296 /* AddPostsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPostsVC.h; sourceTree = "<group>"; };
+		F6D5B4971F8EA00B00011296 /* AddPostsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPostsVC.m; sourceTree = "<group>"; };
+		F6D5B4991F8EA2D100011296 /* PostsExistentesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsExistentesVC.h; sourceTree = "<group>"; };
+		F6D5B49A1F8EA2D100011296 /* PostsExistentesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsExistentesVC.m; sourceTree = "<group>"; };
+		F6D5B49C1F8EA33B00011296 /* PostsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsTableViewCell.h; sourceTree = "<group>"; };
+		F6D5B49D1F8EA33B00011296 /* PostsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsTableViewCell.m; sourceTree = "<group>"; };
 		F6ECA15D1F8550E90008F7A8 /* AddNewCapsulaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewCapsulaViewController.h; sourceTree = "<group>"; };
 		F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewCapsulaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6604B391F881E9400353A0A /* libsqlite3.0.tbd in Frameworks */,
 				3C30D8D51F7869C54F16E4D5 /* libPods-dulceObjective.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +84,6 @@
 		33C9ABEA56D5024140619EBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6604B381F881E9400353A0A /* libsqlite3.0.tbd */,
 				47D920271483BB4B0AFC0E3E /* libPods-dulceObjective.a */,
 			);
 			name = Frameworks;
@@ -115,23 +119,30 @@
 		E4982BEF1F7C1D9500C68A7F /* dulceObjective */ = {
 			isa = PBXGroup;
 			children = (
-				F6604B3A1F88215B00353A0A /* FMDB */,
+				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
+				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
+				F6D5B4991F8EA2D100011296 /* PostsExistentesVC.h */,
+				F6D5B49A1F8EA2D100011296 /* PostsExistentesVC.m */,
+				F6D5B4961F8EA00B00011296 /* AddPostsVC.h */,
+				F6D5B4971F8EA00B00011296 /* AddPostsVC.m */,
+				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
+				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
+				F6D5B49C1F8EA33B00011296 /* PostsTableViewCell.h */,
+				F6D5B49D1F8EA33B00011296 /* PostsTableViewCell.m */,
 				F626A3D61F7D51BA00804ADD /* Cafe.h */,
 				F626A3D71F7D51BA00804ADD /* Cafe.m */,
+				F6C695501F8D0C6900463E48 /* DBManager.h */,
+				F6C695511F8D0C6900463E48 /* DBManager.m */,
 				F62056121F85120E00630800 /* AddTipoDeCafeViewController.h */,
 				F62056131F85120E00630800 /* AddTipoDeCafeViewController.m */,
 				F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */,
 				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
 				F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */,
 				F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */,
-				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
-				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
-				F6604B451F88233700353A0A /* Cafes.db */,
+				F6C6954F1F8D014300463E48 /* Cafes.db */,
 				E4982BF91F7C1D9500C68A7F /* Assets.xcassets */,
 				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
 				E4982BFF1F7C1D9500C68A7F /* main.m */,
-				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
-				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
 				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
 				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
 				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
@@ -144,17 +155,6 @@
 				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
 			);
 			path = dulceObjective;
-			sourceTree = "<group>";
-		};
-		F6604B3A1F88215B00353A0A /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				F6604B471F8823A900353A0A /* FMDatabase.h */,
-				F6604B481F8823A900353A0A /* FMDatabase.m */,
-				F6604B491F8823A900353A0A /* FMResultSet.h */,
-				F6604B461F8823A900353A0A /* FMResultSet.m */,
-			);
-			path = FMDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,15 +284,19 @@
 			files = (
 				F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */,
 				F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */,
+				F6D5B49B1F8EA2D100011296 /* PostsExistentesVC.m in Sources */,
 				F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */,
 				F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */,
 				E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */,
 				E4982C001F7C1D9500C68A7F /* main.m in Sources */,
 				F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */,
+				F6D5B4981F8EA00B00011296 /* AddPostsVC.m in Sources */,
 				F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */,
 				F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */,
 				F62056141F85120E00630800 /* AddTipoDeCafeViewController.m in Sources */,
+				F6D5B49E1F8EA33B00011296 /* PostsTableViewCell.m in Sources */,
 				E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */,
+				F6C695521F8D0C6900463E48 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,27 +12,26 @@
 
 
 @implementation CafeManager
-
-- (void)insertCafe:(NSString *)cafeName {
-    [self.cafes addObject: cafeName];
+- (void)insertCafe:(Cafe *)cafe {
+    [self.cafes addObject: cafe];
 }
 
-- (void)removeCafe:(NSString *)cafeName {
-    [self.cafes removeObject:cafeName];
+- (void)removeCafe:(Cafe *)cafe {
+    [self.cafes removeObject:cafe];
 }
 
 //-(NSMutableDictionary *)getCafes: (NSMutableDictionary *) dict{
 //
 //}
 
-- (void)insertCapsula:(NSString *)tipoDeCafe capsula:(NSMutableArray *)capsula {
-    //self.dict[tipoDeCafe] = capsula;
-    [self.capsulaArray addObject:capsula];
-}
-
-- (void)removeCapsula:(NSString *)tipoDeCafe capsula:(Capsula *)capsula {
-    [self.capsulaArray removeObject:capsula];
-}
+//- (void)insertCapsula:(NSString *)tipoDeCafe capsula:(NSMutableArray *)capsula {
+//    //self.dict[tipoDeCafe] = capsula;
+//    [self.capsulaArray addObject:capsula];
+//}
+//
+//- (void)removeCapsula:(NSString *)tipoDeCafe capsula:(Capsula *)capsula {
+//    [self.capsulaArray removeObject:capsula];
+//}
 
 //-(Capsula *) getCapsula: (NSString *) tipoDeCafe{
 //    

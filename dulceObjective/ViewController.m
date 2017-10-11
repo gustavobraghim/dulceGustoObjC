@@ -17,13 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    Cafe *instanceOfCafe =[[Cafe alloc] init];
-    Capsula *instanceOfCapsula =[[Capsula alloc] init];
-    CafeManager *instanceOfCafeManager= [[CafeManager alloc] init];
-    
-    //tenho que fazer o release de todas elas? Tenho que criar o método dealloc pra cada uma nos respectivos .m?
+//    Cafe *instanceOfCafe =[[Cafe alloc] init];
+//    DBManager *instanceOfDBManager =[[DBManager alloc] init];
+    //Capsula *instanceOfCapsula =[[Capsula alloc] init];
+    //CafeManager *instanceOfCafeManager= [[CafeManager alloc] init];
 }
-
-
 @end

@@ -9,6 +9,9 @@
 #import "TiposDeCafeTableViewController.h"
 #import "CelulaTableViewCell.h"
 #import "ItensDoTipoDeterminadoViewController.h"
+#import "sqlite3.h"
+#import "FMDatabase.h"
+#import "DBManager.h"
 
 @interface TiposDeCafeTableViewController ()
 @end
@@ -18,15 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Cafe *expresso = [[Cafe alloc] init];
-    [expresso setName:@"Expresso"];
-    [expresso setTracos:3];
-    
-    Cafe *especial = [[Cafe alloc] init];
-    [especial setName:@"Especial"];
-    [especial setTracos:2];
-    
-    self.cafes = [NSMutableArray arrayWithObjects:especial,expresso, nil];
+    self.dbInstance = [[DBManager alloc] init];
+    self.cafes = [self.dbInstance retrieveCafe];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -52,26 +48,27 @@
         ItensDoTipoDeterminadoViewController *destViewController = segue.destinationViewController;
         destViewController.cafe = [self.cafes objectAtIndex:indexPath.row];
     }
+    
     else if ([segue.identifier isEqualToString:@"addCoffeSegue"]){
         AddTipoDeCafeViewController *tipoDeCafe = segue.destinationViewController;
         tipoDeCafe.delegate = self;
     }
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
+        Cafe* cafezinho = [self.cafes objectAtIndex:indexPath.row];
+        [self.dbInstance deleteCafe: cafezinho];
+        
         [self.cafes removeObjectAtIndex:indexPath.row];
-        [tableView reloadData];
+        [self.tableView reloadData];
     }
 }
 
--(void)sendTextToViewController:(NSString *)string{
-    [self.cafes addObject:string];
+-(void)sendCafeToViewController:(Cafe *)cafe{
+    [self.cafes addObject:cafe];
+    [self.dbInstance insertingData:cafe];
     [self.tableView reloadData];
 }
 @end
-

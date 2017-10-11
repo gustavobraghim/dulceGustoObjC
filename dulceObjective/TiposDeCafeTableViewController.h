@@ -7,13 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AddTipoDeCafeViewController.h""
+#import "AddTipoDeCafeViewController.h"
+#import "sqlite3.h"
+#import "FMDatabase.h"
+#import "DBManager.h"
 @class Cafe;
 
 
 @interface TiposDeCafeTableViewController : UIViewController <UITableViewDataSource, UITableViewDataSource, CafeDelegate>
 
-@property (strong, nonatomic) IBOutlet UILabel *labelOutput;
 @property(strong, nonatomic) IBOutlet UITableView *tableView;
 @property(strong, nonatomic) NSMutableArray<Cafe *> *cafes;
+@property(strong, nonatomic) DBManager *dbInstance;
+@property(strong, nonatomic) Cafe *cafezinho;
+
 @end

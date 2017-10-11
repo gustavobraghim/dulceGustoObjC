@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sqlite3.h"
+#import "FMDatabase.h"
+#import "Cafe.h"
+#import "DBManager.h"
+
 @protocol CafeDelegate <NSObject>
--(void)sendTextToViewController:(NSString *)string; //trlcar o nome pra um mais adequado
+-(void)sendCafeToViewController:(Cafe *)cafe;
 @end
 
 @interface AddTipoDeCafeViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITextField *tipoCafeText;
+
 @property (nonatomic, weak) id <CafeDelegate>delegate;
+@property(strong, nonatomic) DBManager *dbInstance;
+
 @end

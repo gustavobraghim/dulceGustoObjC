@@ -7,18 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "DBManager.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
-
+@synthesize databaseName, databasePath;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+   self.databaseName=@"Cafes.db";
+   DBManager *dbInstance = [[DBManager alloc] init];
+    [dbInstance createTable];
+   return YES;
 }
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -49,3 +52,4 @@
 
 
 @end
+

@@ -12,6 +12,6 @@
 @interface Cafe : NSObject
 @property(nonatomic, strong) NSString* name;
 @property NSInteger tracos;
-@property NSInteger numberCapsulas;
-
+@property NSInteger numeroCapsulas;
+@property NSInteger identificador;
 @end
