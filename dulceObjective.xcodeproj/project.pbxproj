@@ -23,9 +23,11 @@
 		F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */; };
 		F6C695521F8D0C6900463E48 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C695511F8D0C6900463E48 /* DBManager.m */; };
 		F6D5B4981F8EA00B00011296 /* AddPostsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B4971F8EA00B00011296 /* AddPostsVC.m */; };
-		F6D5B49B1F8EA2D100011296 /* PostsExistentesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B49A1F8EA2D100011296 /* PostsExistentesVC.m */; };
-		F6D5B49E1F8EA33B00011296 /* PostsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B49D1F8EA33B00011296 /* PostsTableViewCell.m */; };
 		F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */; };
+		F6EEB0691F96268100693297 /* RESTApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB0681F96268100693297 /* RESTApi.m */; };
+		F6EEB06C1F964A0500693297 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB06B1F964A0500693297 /* PostsViewController.m */; };
+		F6EEB06F1F9687D700693297 /* TesteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB06E1F9687D700693297 /* TesteTableViewController.m */; };
+		F6EEB0721F968A3B00693297 /* TesteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB0711F968A3B00693297 /* TesteVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,12 +63,16 @@
 		F6C695511F8D0C6900463E48 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		F6D5B4961F8EA00B00011296 /* AddPostsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPostsVC.h; sourceTree = "<group>"; };
 		F6D5B4971F8EA00B00011296 /* AddPostsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPostsVC.m; sourceTree = "<group>"; };
-		F6D5B4991F8EA2D100011296 /* PostsExistentesVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsExistentesVC.h; sourceTree = "<group>"; };
-		F6D5B49A1F8EA2D100011296 /* PostsExistentesVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsExistentesVC.m; sourceTree = "<group>"; };
-		F6D5B49C1F8EA33B00011296 /* PostsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsTableViewCell.h; sourceTree = "<group>"; };
-		F6D5B49D1F8EA33B00011296 /* PostsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsTableViewCell.m; sourceTree = "<group>"; };
 		F6ECA15D1F8550E90008F7A8 /* AddNewCapsulaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewCapsulaViewController.h; sourceTree = "<group>"; };
 		F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewCapsulaViewController.m; sourceTree = "<group>"; };
+		F6EEB0671F96268100693297 /* RESTApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTApi.h; sourceTree = "<group>"; };
+		F6EEB0681F96268100693297 /* RESTApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTApi.m; sourceTree = "<group>"; };
+		F6EEB06A1F964A0500693297 /* PostsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
+		F6EEB06B1F964A0500693297 /* PostsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
+		F6EEB06D1F9687D700693297 /* TesteTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TesteTableViewController.h; sourceTree = "<group>"; };
+		F6EEB06E1F9687D700693297 /* TesteTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesteTableViewController.m; sourceTree = "<group>"; };
+		F6EEB0701F968A3B00693297 /* TesteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TesteVC.h; sourceTree = "<group>"; };
+		F6EEB0711F968A3B00693297 /* TesteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesteVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,18 +125,16 @@
 		E4982BEF1F7C1D9500C68A7F /* dulceObjective */ = {
 			isa = PBXGroup;
 			children = (
-				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
-				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
-				F6D5B4991F8EA2D100011296 /* PostsExistentesVC.h */,
-				F6D5B49A1F8EA2D100011296 /* PostsExistentesVC.m */,
+				F6EEB06A1F964A0500693297 /* PostsViewController.h */,
+				F6EEB06B1F964A0500693297 /* PostsViewController.m */,
+				F6EEB0671F96268100693297 /* RESTApi.h */,
+				F6EEB0681F96268100693297 /* RESTApi.m */,
 				F6D5B4961F8EA00B00011296 /* AddPostsVC.h */,
 				F6D5B4971F8EA00B00011296 /* AddPostsVC.m */,
-				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
-				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
-				F6D5B49C1F8EA33B00011296 /* PostsTableViewCell.h */,
-				F6D5B49D1F8EA33B00011296 /* PostsTableViewCell.m */,
 				F626A3D61F7D51BA00804ADD /* Cafe.h */,
 				F626A3D71F7D51BA00804ADD /* Cafe.m */,
+				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
+				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
 				F6C695501F8D0C6900463E48 /* DBManager.h */,
 				F6C695511F8D0C6900463E48 /* DBManager.m */,
 				F62056121F85120E00630800 /* AddTipoDeCafeViewController.h */,
@@ -139,6 +143,8 @@
 				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
 				F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */,
 				F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */,
+				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
+				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
 				F6C6954F1F8D014300463E48 /* Cafes.db */,
 				E4982BF91F7C1D9500C68A7F /* Assets.xcassets */,
 				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
@@ -146,6 +152,8 @@
 				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
 				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
 				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
+				F6EEB0701F968A3B00693297 /* TesteVC.h */,
+				F6EEB0711F968A3B00693297 /* TesteVC.m */,
 				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
 				F65F72E61F7D835600D0BC6E /* Capsula.h */,
 				F65F72E71F7D835600D0BC6E /* Capsula.m */,
@@ -153,6 +161,8 @@
 				F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */,
 				F65F72E91F7D896600D0BC6E /* CafeManager.h */,
 				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
+				F6EEB06D1F9687D700693297 /* TesteTableViewController.h */,
+				F6EEB06E1F9687D700693297 /* TesteTableViewController.m */,
 			);
 			path = dulceObjective;
 			sourceTree = "<group>";
@@ -284,9 +294,11 @@
 			files = (
 				F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */,
 				F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */,
-				F6D5B49B1F8EA2D100011296 /* PostsExistentesVC.m in Sources */,
+				F6EEB06F1F9687D700693297 /* TesteTableViewController.m in Sources */,
 				F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */,
+				F6EEB06C1F964A0500693297 /* PostsViewController.m in Sources */,
 				F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */,
+				F6EEB0721F968A3B00693297 /* TesteVC.m in Sources */,
 				E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */,
 				E4982C001F7C1D9500C68A7F /* main.m in Sources */,
 				F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */,
@@ -294,7 +306,7 @@
 				F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */,
 				F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */,
 				F62056141F85120E00630800 /* AddTipoDeCafeViewController.m in Sources */,
-				F6D5B49E1F8EA33B00011296 /* PostsTableViewCell.m in Sources */,
+				F6EEB0691F96268100693297 /* RESTApi.m in Sources */,
 				E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */,
 				F6C695521F8D0C6900463E48 /* DBManager.m in Sources */,
 			);

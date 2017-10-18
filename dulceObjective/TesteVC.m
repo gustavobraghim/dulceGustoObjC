@@ -1,18 +1,19 @@
 //
-//  PostsExistentesVC.m
+//  TesteVC.m
 //  dulceObjective
 //
-//  Created by Gustavo Braghim on 11/10/17.
+//  Created by Gustavo Braghim on 17/10/17.
 //  Copyright © 2017 Gustavo do Carmo Braghim. All rights reserved.
 //
 
-#import "PostsExistentesVC.h"
+#import "TesteVC.h"
 
-@interface PostsExistentesVC ()
+@interface TesteVC ()
+
 @end
 
-@implementation PostsExistentesVC
-@synthesize tableView;
+@implementation TesteVC
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
