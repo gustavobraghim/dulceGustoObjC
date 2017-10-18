@@ -10,5 +10,7 @@
 
 @interface PostsTableViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tablePosts;
+@property (readonly) IBOutlet UILabel *title;
+@property (readonly) IBOutlet UITextField *description;
 
 @end
