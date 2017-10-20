@@ -38,7 +38,6 @@
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data{
 	[self.receivedData appendData:data];
-	
 }
 
 //CHAMANDO AQUI
@@ -48,6 +47,10 @@
 	self.delegate = nil;
 	self.requestConnection = nil;
 	self.receivedData = nil;
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
+	
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{

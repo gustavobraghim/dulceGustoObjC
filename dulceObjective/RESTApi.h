@@ -9,15 +9,15 @@
 #import <Foundation/Foundation.h>
 @class RESTApi;
 @protocol RestAPIDelegate
+@optional
 -(void)getReceivedData:(NSMutableData*) data sender:(RESTApi *) sender;
 @end
 
 @interface RESTApi : NSObject
 
 -(void)connection:(NSURLConnection *) connection didReceiveData:(NSData *)data;
--(void)connectionDidFinishLoading:(NSURLConnection *) connection;
 -(void)connection:(NSURLConnection *) connection didFailWithError:(NSError *)error;
 -(void)httpRequest: (NSMutableURLRequest *) request;
-
+-(void)connectionDidFinishLoading:(NSURLConnection *) connection;
 @property (nonatomic, weak) id <RestAPIDelegate> delegate;
 @end

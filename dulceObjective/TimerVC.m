@@ -1,18 +1,33 @@
 //
-//  TesteVC.m
+//  TimerVC.m
 //  dulceObjective
 //
-//  Created by Gustavo Braghim on 17/10/17.
+//  Created by Gustavo Braghim on 20/10/17.
 //  Copyright © 2017 Gustavo do Carmo Braghim. All rights reserved.
 //
 
-#import "TesteVC.h"
+#import "TimerVC.h"
 
-@interface TesteVC ()
+@interface TimerVC ()
+
 
 @end
 
-@implementation TesteVC
+@implementation TimerVC
+- (IBAction)startTimer:(id)sender {
+	countint = 10; //SUPONHO QUE TEM 10 SEGUNDOS DE PREPARACAO
+	self.tempoAtual.text = [NSString stringWithFormat:@"%i", countint];
+	timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(Counter) userInfo:nil repeats:YES];
+}
+
+-(void)Counter{
+	countint-=1;
+	self.tempoAtual.text = [NSString stringWithFormat:@"%i", countint];
+	if (countint == 0) {
+		[timer invalidate];
+	}
+	
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

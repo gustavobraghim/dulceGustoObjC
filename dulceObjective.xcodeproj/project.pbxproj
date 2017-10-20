@@ -21,13 +21,13 @@
 		F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */; };
 		F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */; };
 		F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */; };
+		F68DFA9F1F9A82E100A1AECF /* TimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DFA9E1F9A82E100A1AECF /* TimerVC.m */; };
+		F68DFAA11F9A894900A1AECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68DFAA01F9A894900A1AECF /* AudioToolbox.framework */; };
 		F6C695521F8D0C6900463E48 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C695511F8D0C6900463E48 /* DBManager.m */; };
 		F6D5B4981F8EA00B00011296 /* AddPostsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B4971F8EA00B00011296 /* AddPostsVC.m */; };
 		F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */; };
 		F6EEB0691F96268100693297 /* RESTApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB0681F96268100693297 /* RESTApi.m */; };
 		F6EEB06C1F964A0500693297 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB06B1F964A0500693297 /* PostsViewController.m */; };
-		F6EEB06F1F9687D700693297 /* TesteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB06E1F9687D700693297 /* TesteTableViewController.m */; };
-		F6EEB0721F968A3B00693297 /* TesteVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB0711F968A3B00693297 /* TesteVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +58,9 @@
 		F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItensDoTipoDeterminadoViewController.m; sourceTree = "<group>"; };
 		F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CelulaTableViewCell.h; sourceTree = "<group>"; };
 		F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelulaTableViewCell.m; sourceTree = "<group>"; };
+		F68DFA9D1F9A82E100A1AECF /* TimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerVC.h; sourceTree = "<group>"; };
+		F68DFA9E1F9A82E100A1AECF /* TimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerVC.m; sourceTree = "<group>"; };
+		F68DFAA01F9A894900A1AECF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F6C6954F1F8D014300463E48 /* Cafes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafes.db; sourceTree = SOURCE_ROOT; };
 		F6C695501F8D0C6900463E48 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		F6C695511F8D0C6900463E48 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
@@ -69,10 +72,6 @@
 		F6EEB0681F96268100693297 /* RESTApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTApi.m; sourceTree = "<group>"; };
 		F6EEB06A1F964A0500693297 /* PostsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
 		F6EEB06B1F964A0500693297 /* PostsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsViewController.m; sourceTree = "<group>"; };
-		F6EEB06D1F9687D700693297 /* TesteTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TesteTableViewController.h; sourceTree = "<group>"; };
-		F6EEB06E1F9687D700693297 /* TesteTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesteTableViewController.m; sourceTree = "<group>"; };
-		F6EEB0701F968A3B00693297 /* TesteVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TesteVC.h; sourceTree = "<group>"; };
-		F6EEB0711F968A3B00693297 /* TesteVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TesteVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68DFAA11F9A894900A1AECF /* AudioToolbox.framework in Frameworks */,
 				3C30D8D51F7869C54F16E4D5 /* libPods-dulceObjective.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +90,7 @@
 		33C9ABEA56D5024140619EBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F68DFAA01F9A894900A1AECF /* AudioToolbox.framework */,
 				47D920271483BB4B0AFC0E3E /* libPods-dulceObjective.a */,
 			);
 			name = Frameworks;
@@ -125,12 +126,14 @@
 		E4982BEF1F7C1D9500C68A7F /* dulceObjective */ = {
 			isa = PBXGroup;
 			children = (
+				F68DFA9D1F9A82E100A1AECF /* TimerVC.h */,
+				F68DFA9E1F9A82E100A1AECF /* TimerVC.m */,
 				F6EEB06A1F964A0500693297 /* PostsViewController.h */,
 				F6EEB06B1F964A0500693297 /* PostsViewController.m */,
-				F6EEB0671F96268100693297 /* RESTApi.h */,
-				F6EEB0681F96268100693297 /* RESTApi.m */,
 				F6D5B4961F8EA00B00011296 /* AddPostsVC.h */,
 				F6D5B4971F8EA00B00011296 /* AddPostsVC.m */,
+				F6EEB0671F96268100693297 /* RESTApi.h */,
+				F6EEB0681F96268100693297 /* RESTApi.m */,
 				F626A3D61F7D51BA00804ADD /* Cafe.h */,
 				F626A3D71F7D51BA00804ADD /* Cafe.m */,
 				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
@@ -143,6 +146,7 @@
 				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
 				F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */,
 				F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */,
+				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
 				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
 				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
 				F6C6954F1F8D014300463E48 /* Cafes.db */,
@@ -151,9 +155,6 @@
 				E4982BFF1F7C1D9500C68A7F /* main.m */,
 				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
 				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
-				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
-				F6EEB0701F968A3B00693297 /* TesteVC.h */,
-				F6EEB0711F968A3B00693297 /* TesteVC.m */,
 				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
 				F65F72E61F7D835600D0BC6E /* Capsula.h */,
 				F65F72E71F7D835600D0BC6E /* Capsula.m */,
@@ -161,8 +162,6 @@
 				F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */,
 				F65F72E91F7D896600D0BC6E /* CafeManager.h */,
 				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
-				F6EEB06D1F9687D700693297 /* TesteTableViewController.h */,
-				F6EEB06E1F9687D700693297 /* TesteTableViewController.m */,
 			);
 			path = dulceObjective;
 			sourceTree = "<group>";
@@ -294,11 +293,9 @@
 			files = (
 				F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */,
 				F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */,
-				F6EEB06F1F9687D700693297 /* TesteTableViewController.m in Sources */,
 				F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */,
 				F6EEB06C1F964A0500693297 /* PostsViewController.m in Sources */,
 				F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */,
-				F6EEB0721F968A3B00693297 /* TesteVC.m in Sources */,
 				E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */,
 				E4982C001F7C1D9500C68A7F /* main.m in Sources */,
 				F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */,
@@ -308,6 +305,7 @@
 				F62056141F85120E00630800 /* AddTipoDeCafeViewController.m in Sources */,
 				F6EEB0691F96268100693297 /* RESTApi.m in Sources */,
 				E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */,
+				F68DFA9F1F9A82E100A1AECF /* TimerVC.m in Sources */,
 				F6C695521F8D0C6900463E48 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,9 @@
 
 @interface AddPostsVC : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *titlePost;
-@property (strong, nonatomic) IBOutlet UITextView *bodyPost;
-@property (strong, nonatomic) IBOutlet UITextField *idPost;
-
+@property (strong, nonatomic) IBOutlet UITextField *descriptionPost;
+@property (strong, nonatomic) NSString *recebeTitle;
+@property (strong, nonatomic) NSString *recebeDescription;
+@property (strong, nonatomic) NSNumber *recebeId;
+@property (strong, nonatomic) NSNumber *recebeuserId;
 @end
