@@ -19,5 +19,5 @@
 -(void)connection:(NSURLConnection *) connection didFailWithError:(NSError *)error;
 -(void)httpRequest: (NSMutableURLRequest *) request;
 -(void)connectionDidFinishLoading:(NSURLConnection *) connection;
-@property (nonatomic, weak) id <RestAPIDelegate> delegate;
+@property (nonatomic, strong) id <RestAPIDelegate> delegate;
 @end

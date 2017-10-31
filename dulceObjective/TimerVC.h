@@ -8,13 +8,17 @@
 
 #import "ViewController.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface TimerVC : ViewController{
-	NSTimer *timer;
-	int countint;
-	SystemSoundID SoundID;
+@interface TimerVC : ViewController {
+	
 }
+@property(strong, nonatomic) Cafe *cafe;
 @property (strong, nonatomic) IBOutlet UILabel *tempoAtual;
 @property (strong, nonatomic) IBOutlet UILabel *tempoTotal;
+@property (assign, nonatomic) NSInteger cafeTracos;
+@property (strong, nonatomic) IBOutlet UILabel *cafeExibeTracos;
+
+
 - (IBAction)startTimer:(id)sender;
 @end

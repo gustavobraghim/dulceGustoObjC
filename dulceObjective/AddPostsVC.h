@@ -14,5 +14,7 @@
 @property (strong, nonatomic) NSString *recebeTitle;
 @property (strong, nonatomic) NSString *recebeDescription;
 @property (strong, nonatomic) NSNumber *recebeId;
-@property (strong, nonatomic) NSNumber *recebeuserId;
+-(IBAction) actionButton:(id)sender;
+-(IBAction) deleteButton:(id)sender;
+-(IBAction) backButton:(id)sender;
 @end

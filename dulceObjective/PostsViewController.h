@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESTApi.h"
 
-@interface PostsTableViewController : UIViewController
+@interface PostsViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tablePosts;
 @property (readonly) IBOutlet UILabel *title;
 @property (readonly) IBOutlet UITextField *description;
-@property (nonatomic, assign) NSDictionary *posts;
-
-
+@property (nonatomic, strong) RESTApi *restAPI;
 @end

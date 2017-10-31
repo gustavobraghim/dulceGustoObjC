@@ -10,33 +10,40 @@
 #import "AddTipoDeCafeViewController.h"
 #import "TiposDeCafeTableViewController.h"
 #import "Cafe.h"
+#import "AddTipoDeCafePresenter.h"
 
 @interface AddTipoDeCafeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *nameCafeText;
 @property (strong, nonatomic) IBOutlet UITextField *tracosCafe;
 @property (strong, nonatomic) Cafe *cafe;
+@property (strong, nonatomic) AddTipoDeCafePresenter *tipoDeCafePresenter;
 @end
 
 @implementation AddTipoDeCafeViewController
-
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    self.cafe = [[Cafe alloc] init];
+	[super viewDidLoad];
+	self.cafe = [[Cafe alloc] init];
+	self.tipoDeCafePresenter = [[AddTipoDeCafePresenter alloc] init];
+	self.tipoDeCafePresenter.addTipoDeCafeViewController = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+-(NSString *)getName{
+	NSString *cafeName = self.nameCafeText.text;
+	return  cafeName;
+}
+
+-(NSInteger)getTracos{
+	NSInteger cafeTracos = [self.tracosCafe.text intValue];
+	return cafeTracos;
+}
+
+-(void)setFieldsAfterAdding{
+	self.nameCafeText.text = @"";
+	self.tracosCafe.text=@"";
 }
 
 - (IBAction)addCafe:(id)sender {
-    self.cafe.name = self.nameCafeText.text;
-    self.cafe.tracos = [self.tracosCafe.text integerValue];
-    self.cafe.numeroCapsulas = 5;
-    [self.delegate sendCafeToViewController:self.cafe];
-    self.nameCafeText.text = @"";
-    self.tracosCafe.text=@"";
-   // [self.dbInstance insertingData:self.cafe];
+	[self.tipoDeCafePresenter buttonPressed];
 }
-
-
 @end
+

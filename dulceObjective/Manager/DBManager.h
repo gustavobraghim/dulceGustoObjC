@@ -14,6 +14,4 @@
 -(void) insertingData: (Cafe*) cafe;
 -(void)deleteCafe: (Cafe*) cafe;
 
-//-(void) updateCafe;
-//- (NSArray *)findAllCafes;
 @end

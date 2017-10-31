@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Cafe.h"
-#import "Capsula.h"
+//#import "Capsula.h"
 #import "CafeManager.h"
 @interface CafeManager : NSObject
 @property(nonatomic, strong) NSMutableDictionary *dict;

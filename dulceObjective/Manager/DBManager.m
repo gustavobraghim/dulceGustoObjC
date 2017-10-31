@@ -63,24 +63,5 @@
     [self.database commit];
 }
 
-//-(void) updateCafe{
-//    Cafe *cafe = [[Cafe alloc] init];
-//    [self.database executeUpdate:@"UPDATE cafes set name=? tracos=? numberCapsulas=?", cafe.name, cafe.tracos, cafe.numberCapsulas, nil];
-//}
-
-//- (NSArray *)findAllCafes
-//{
-//    NSMutableArray *cafes = [NSMutableArray array];
-//    FMResultSet *resultSet = [self.database executeQuery:@"SELECT * from cafes ORDER BY name"];
-//
-//    while ([resultSet next]) {
-//        Cafe *cafe = [[Cafe alloc]init];
-//        cafe.name     = [resultSet stringForColumn:@"name"];
-//        cafe.tracos = [resultSet intForColumn:@"tracos"];
-//        cafe.numberCapsulas = [resultSet intForColumn:@"numberCapsulas"];
-//        [cafes addObject:cafe];
-//    }
-//    return cafes;
-//}
 @end
 

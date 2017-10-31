@@ -20,5 +20,9 @@
 
 @property (nonatomic, weak) id <CafeDelegate>delegate;
 @property(strong, nonatomic) DBManager *dbInstance;
+-(NSString *)getName;
+-(NSInteger)getTracos;
+-(void)setFieldsAfterAdding;
 
 @end
+

@@ -16,16 +16,21 @@
 		E4982C001F7C1D9500C68A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4982BFF1F7C1D9500C68A7F /* main.m */; };
 		F62056141F85120E00630800 /* AddTipoDeCafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62056131F85120E00630800 /* AddTipoDeCafeViewController.m */; };
 		F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */ = {isa = PBXBuildFile; fileRef = F626A3D71F7D51BA00804ADD /* Cafe.m */; };
-		F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72E71F7D835600D0BC6E /* Capsula.m */; };
 		F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F72EA1F7D896600D0BC6E /* CafeManager.m */; };
 		F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */; };
-		F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */; };
+		F68394F01F84009700CE2A49 /* CafeSelecionadoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394EF1F84009700CE2A49 /* CafeSelecionadoViewController.m */; };
 		F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */; };
 		F68DFA9F1F9A82E100A1AECF /* TimerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F68DFA9E1F9A82E100A1AECF /* TimerVC.m */; };
 		F68DFAA11F9A894900A1AECF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68DFAA01F9A894900A1AECF /* AudioToolbox.framework */; };
+		F6A35DF31FA0ECEA004DB7CE /* TimerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A35DF21FA0ECEA004DB7CE /* TimerPresenter.m */; };
+		F6A35DF61FA0ED06004DB7CE /* PostsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A35DF51FA0ED06004DB7CE /* PostsPresenter.m */; };
+		F6A35DF91FA0ED55004DB7CE /* AddPostsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A35DF81FA0ED55004DB7CE /* AddPostsPresenter.m */; };
+		F6A35DFC1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A35DFB1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.m */; };
+		F6A35DFF1FA0F2A5004DB7CE /* TiposDeCafePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A35DFE1FA0F2A5004DB7CE /* TiposDeCafePresenter.m */; };
+		F6A35E021FA0F31D004DB7CE /* CafeSelecionadoPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A35E011FA0F31D004DB7CE /* CafeSelecionadoPresenter.m */; };
 		F6C695521F8D0C6900463E48 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C695511F8D0C6900463E48 /* DBManager.m */; };
 		F6D5B4981F8EA00B00011296 /* AddPostsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D5B4971F8EA00B00011296 /* AddPostsVC.m */; };
-		F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */; };
+		F6D6A4F81F9E568C009D9D20 /* sound2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F6D6A4F71F9E47A6009D9D20 /* sound2.wav */; };
 		F6EEB0691F96268100693297 /* RESTApi.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB0681F96268100693297 /* RESTApi.m */; };
 		F6EEB06C1F964A0500693297 /* PostsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EEB06B1F964A0500693297 /* PostsViewController.m */; };
 /* End PBXBuildFile section */
@@ -48,26 +53,35 @@
 		F62056131F85120E00630800 /* AddTipoDeCafeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTipoDeCafeViewController.m; sourceTree = "<group>"; };
 		F626A3D61F7D51BA00804ADD /* Cafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cafe.h; sourceTree = "<group>"; };
 		F626A3D71F7D51BA00804ADD /* Cafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cafe.m; sourceTree = "<group>"; };
-		F65F72E61F7D835600D0BC6E /* Capsula.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Capsula.h; sourceTree = "<group>"; };
-		F65F72E71F7D835600D0BC6E /* Capsula.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Capsula.m; sourceTree = "<group>"; };
 		F65F72E91F7D896600D0BC6E /* CafeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CafeManager.h; sourceTree = "<group>"; };
 		F65F72EA1F7D896600D0BC6E /* CafeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeManager.m; sourceTree = "<group>"; };
 		F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiposDeCafeTableViewController.h; sourceTree = "<group>"; };
 		F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiposDeCafeTableViewController.m; sourceTree = "<group>"; };
-		F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItensDoTipoDeterminadoViewController.h; sourceTree = "<group>"; };
-		F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItensDoTipoDeterminadoViewController.m; sourceTree = "<group>"; };
+		F68394EE1F84009700CE2A49 /* CafeSelecionadoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CafeSelecionadoViewController.h; sourceTree = "<group>"; };
+		F68394EF1F84009700CE2A49 /* CafeSelecionadoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeSelecionadoViewController.m; sourceTree = "<group>"; };
 		F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CelulaTableViewCell.h; sourceTree = "<group>"; };
 		F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CelulaTableViewCell.m; sourceTree = "<group>"; };
 		F68DFA9D1F9A82E100A1AECF /* TimerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerVC.h; sourceTree = "<group>"; };
 		F68DFA9E1F9A82E100A1AECF /* TimerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerVC.m; sourceTree = "<group>"; };
 		F68DFAA01F9A894900A1AECF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F6C6954F1F8D014300463E48 /* Cafes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cafes.db; sourceTree = SOURCE_ROOT; };
+		F6A35DF11FA0ECEA004DB7CE /* TimerPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerPresenter.h; sourceTree = "<group>"; };
+		F6A35DF21FA0ECEA004DB7CE /* TimerPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerPresenter.m; sourceTree = "<group>"; };
+		F6A35DF41FA0ED06004DB7CE /* PostsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsPresenter.h; sourceTree = "<group>"; };
+		F6A35DF51FA0ED06004DB7CE /* PostsPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostsPresenter.m; sourceTree = "<group>"; };
+		F6A35DF71FA0ED55004DB7CE /* AddPostsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPostsPresenter.h; sourceTree = "<group>"; };
+		F6A35DF81FA0ED55004DB7CE /* AddPostsPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPostsPresenter.m; sourceTree = "<group>"; };
+		F6A35DFA1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTipoDeCafePresenter.h; sourceTree = "<group>"; };
+		F6A35DFB1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddTipoDeCafePresenter.m; sourceTree = "<group>"; };
+		F6A35DFD1FA0F2A5004DB7CE /* TiposDeCafePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TiposDeCafePresenter.h; sourceTree = "<group>"; };
+		F6A35DFE1FA0F2A5004DB7CE /* TiposDeCafePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiposDeCafePresenter.m; sourceTree = "<group>"; };
+		F6A35E001FA0F31D004DB7CE /* CafeSelecionadoPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CafeSelecionadoPresenter.h; sourceTree = "<group>"; };
+		F6A35E011FA0F31D004DB7CE /* CafeSelecionadoPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CafeSelecionadoPresenter.m; sourceTree = "<group>"; };
+		F6C6954F1F8D014300463E48 /* Cafes.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cafes.db; path = dulceObjective/Cafes.db; sourceTree = SOURCE_ROOT; };
 		F6C695501F8D0C6900463E48 /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		F6C695511F8D0C6900463E48 /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		F6D5B4961F8EA00B00011296 /* AddPostsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPostsVC.h; sourceTree = "<group>"; };
 		F6D5B4971F8EA00B00011296 /* AddPostsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPostsVC.m; sourceTree = "<group>"; };
-		F6ECA15D1F8550E90008F7A8 /* AddNewCapsulaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewCapsulaViewController.h; sourceTree = "<group>"; };
-		F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewCapsulaViewController.m; sourceTree = "<group>"; };
+		F6D6A4F71F9E47A6009D9D20 /* sound2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound2.wav; sourceTree = "<group>"; };
 		F6EEB0671F96268100693297 /* RESTApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RESTApi.h; sourceTree = "<group>"; };
 		F6EEB0681F96268100693297 /* RESTApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RESTApi.m; sourceTree = "<group>"; };
 		F6EEB06A1F964A0500693297 /* PostsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostsViewController.h; sourceTree = "<group>"; };
@@ -126,44 +140,85 @@
 		E4982BEF1F7C1D9500C68A7F /* dulceObjective */ = {
 			isa = PBXGroup;
 			children = (
+				F696C1DC1FA0EA9B0033C87D /* Presenter */,
+				F696C1DB1FA0EA910033C87D /* Model */,
+				F696C1D81FA0EA680033C87D /* View */,
+				F696C1D91FA0EA7C0033C87D /* Manager */,
+				F68394EE1F84009700CE2A49 /* CafeSelecionadoViewController.h */,
+				F68394EF1F84009700CE2A49 /* CafeSelecionadoViewController.m */,
+				F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */,
+				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
+				F6D6A4F71F9E47A6009D9D20 /* sound2.wav */,
+				E4982BF91F7C1D9500C68A7F /* Assets.xcassets */,
+				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
+			);
+			path = dulceObjective;
+			sourceTree = "<group>";
+		};
+		F696C1D81FA0EA680033C87D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
+				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
+				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
+				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
+				F62056121F85120E00630800 /* AddTipoDeCafeViewController.h */,
+				F62056131F85120E00630800 /* AddTipoDeCafeViewController.m */,
 				F68DFA9D1F9A82E100A1AECF /* TimerVC.h */,
 				F68DFA9E1F9A82E100A1AECF /* TimerVC.m */,
 				F6EEB06A1F964A0500693297 /* PostsViewController.h */,
 				F6EEB06B1F964A0500693297 /* PostsViewController.m */,
 				F6D5B4961F8EA00B00011296 /* AddPostsVC.h */,
 				F6D5B4971F8EA00B00011296 /* AddPostsVC.m */,
-				F6EEB0671F96268100693297 /* RESTApi.h */,
-				F6EEB0681F96268100693297 /* RESTApi.m */,
-				F626A3D61F7D51BA00804ADD /* Cafe.h */,
-				F626A3D71F7D51BA00804ADD /* Cafe.m */,
-				F68394F11F840BD500CE2A49 /* CelulaTableViewCell.h */,
-				F68394F21F840BD500CE2A49 /* CelulaTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F696C1D91FA0EA7C0033C87D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E4982BFF1F7C1D9500C68A7F /* main.m */,
 				F6C695501F8D0C6900463E48 /* DBManager.h */,
 				F6C695511F8D0C6900463E48 /* DBManager.m */,
-				F62056121F85120E00630800 /* AddTipoDeCafeViewController.h */,
-				F62056131F85120E00630800 /* AddTipoDeCafeViewController.m */,
-				F68394E51F83E51600CE2A49 /* TiposDeCafeTableViewController.h */,
-				F68394E61F83E51600CE2A49 /* TiposDeCafeTableViewController.m */,
-				F68394EE1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.h */,
-				F68394EF1F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m */,
-				E4982BF61F7C1D9500C68A7F /* Main.storyboard */,
-				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
-				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
-				F6C6954F1F8D014300463E48 /* Cafes.db */,
-				E4982BF91F7C1D9500C68A7F /* Assets.xcassets */,
-				E4982BFE1F7C1D9500C68A7F /* Info.plist */,
-				E4982BFF1F7C1D9500C68A7F /* main.m */,
-				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
-				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
-				E4982BFB1F7C1D9500C68A7F /* LaunchScreen.storyboard */,
-				F65F72E61F7D835600D0BC6E /* Capsula.h */,
-				F65F72E71F7D835600D0BC6E /* Capsula.m */,
-				F6ECA15D1F8550E90008F7A8 /* AddNewCapsulaViewController.h */,
-				F6ECA15E1F8550E90008F7A8 /* AddNewCapsulaViewController.m */,
+				F6EEB0671F96268100693297 /* RESTApi.h */,
+				F6EEB0681F96268100693297 /* RESTApi.m */,
 				F65F72E91F7D896600D0BC6E /* CafeManager.h */,
 				F65F72EA1F7D896600D0BC6E /* CafeManager.m */,
+				E4982BF01F7C1D9500C68A7F /* AppDelegate.h */,
+				E4982BF11F7C1D9500C68A7F /* AppDelegate.m */,
+				E4982BF31F7C1D9500C68A7F /* ViewController.h */,
+				E4982BF41F7C1D9500C68A7F /* ViewController.m */,
 			);
-			path = dulceObjective;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F696C1DB1FA0EA910033C87D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F626A3D61F7D51BA00804ADD /* Cafe.h */,
+				F626A3D71F7D51BA00804ADD /* Cafe.m */,
+				F6C6954F1F8D014300463E48 /* Cafes.db */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F696C1DC1FA0EA9B0033C87D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F6A35DFA1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.h */,
+				F6A35DFB1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.m */,
+				F6A35DF71FA0ED55004DB7CE /* AddPostsPresenter.h */,
+				F6A35DF81FA0ED55004DB7CE /* AddPostsPresenter.m */,
+				F6A35E001FA0F31D004DB7CE /* CafeSelecionadoPresenter.h */,
+				F6A35E011FA0F31D004DB7CE /* CafeSelecionadoPresenter.m */,
+				F6A35DF11FA0ECEA004DB7CE /* TimerPresenter.h */,
+				F6A35DF21FA0ECEA004DB7CE /* TimerPresenter.m */,
+				F6A35DF41FA0ED06004DB7CE /* PostsPresenter.h */,
+				F6A35DF51FA0ED06004DB7CE /* PostsPresenter.m */,
+				F6A35DFD1FA0F2A5004DB7CE /* TiposDeCafePresenter.h */,
+				F6A35DFE1FA0F2A5004DB7CE /* TiposDeCafePresenter.m */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +285,7 @@
 				E4982BFD1F7C1D9500C68A7F /* LaunchScreen.storyboard in Resources */,
 				E4982BFA1F7C1D9500C68A7F /* Assets.xcassets in Resources */,
 				E4982BF81F7C1D9500C68A7F /* Main.storyboard in Resources */,
+				F6D6A4F81F9E568C009D9D20 /* sound2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,17 +347,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6ECA15F1F8550E90008F7A8 /* AddNewCapsulaViewController.m in Sources */,
+				F6A35DFF1FA0F2A5004DB7CE /* TiposDeCafePresenter.m in Sources */,
 				F65F72EB1F7D896600D0BC6E /* CafeManager.m in Sources */,
 				F626A3D81F7D51BA00804ADD /* Cafe.m in Sources */,
 				F6EEB06C1F964A0500693297 /* PostsViewController.m in Sources */,
-				F65F72E81F7D835600D0BC6E /* Capsula.m in Sources */,
+				F6A35DFC1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.m in Sources */,
+				F6A35DF61FA0ED06004DB7CE /* PostsPresenter.m in Sources */,
+				F6A35E021FA0F31D004DB7CE /* CafeSelecionadoPresenter.m in Sources */,
 				E4982BF51F7C1D9500C68A7F /* ViewController.m in Sources */,
 				E4982C001F7C1D9500C68A7F /* main.m in Sources */,
 				F68394F31F840BD500CE2A49 /* CelulaTableViewCell.m in Sources */,
 				F6D5B4981F8EA00B00011296 /* AddPostsVC.m in Sources */,
+				F6A35DF91FA0ED55004DB7CE /* AddPostsPresenter.m in Sources */,
 				F68394E71F83E51600CE2A49 /* TiposDeCafeTableViewController.m in Sources */,
-				F68394F01F84009700CE2A49 /* ItensDoTipoDeterminadoViewController.m in Sources */,
+				F6A35DF31FA0ECEA004DB7CE /* TimerPresenter.m in Sources */,
+				F68394F01F84009700CE2A49 /* CafeSelecionadoViewController.m in Sources */,
 				F62056141F85120E00630800 /* AddTipoDeCafeViewController.m in Sources */,
 				F6EEB0691F96268100693297 /* RESTApi.m in Sources */,
 				E4982BF21F7C1D9500C68A7F /* AppDelegate.m in Sources */,

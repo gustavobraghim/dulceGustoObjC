@@ -49,9 +49,7 @@
 	self.receivedData = nil;
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{
-	
-}
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response{}
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error{
 	NSLog(@"%@", error.description);
