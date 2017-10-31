@@ -205,18 +205,18 @@
 		F696C1DC1FA0EA9B0033C87D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F6A35E001FA0F31D004DB7CE /* CafeSelecionadoPresenter.h */,
+				F6A35E011FA0F31D004DB7CE /* CafeSelecionadoPresenter.m */,
+				F6A35DFD1FA0F2A5004DB7CE /* TiposDeCafePresenter.h */,
+				F6A35DFE1FA0F2A5004DB7CE /* TiposDeCafePresenter.m */,
 				F6A35DFA1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.h */,
 				F6A35DFB1FA0EEDB004DB7CE /* AddTipoDeCafePresenter.m */,
 				F6A35DF71FA0ED55004DB7CE /* AddPostsPresenter.h */,
 				F6A35DF81FA0ED55004DB7CE /* AddPostsPresenter.m */,
-				F6A35E001FA0F31D004DB7CE /* CafeSelecionadoPresenter.h */,
-				F6A35E011FA0F31D004DB7CE /* CafeSelecionadoPresenter.m */,
 				F6A35DF11FA0ECEA004DB7CE /* TimerPresenter.h */,
 				F6A35DF21FA0ECEA004DB7CE /* TimerPresenter.m */,
 				F6A35DF41FA0ED06004DB7CE /* PostsPresenter.h */,
 				F6A35DF51FA0ED06004DB7CE /* PostsPresenter.m */,
-				F6A35DFD1FA0F2A5004DB7CE /* TiposDeCafePresenter.h */,
-				F6A35DFE1FA0F2A5004DB7CE /* TiposDeCafePresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
